@@ -1,62 +1,62 @@
 // //abstract class
 // abstract class Accounts {
-// float balance;
-// String accountNumber;
-// String accountHolderName;
-// String address;
+//     float balance;
+//     String accountNumber;
+//     String accountHolderName;
+//     String address;
 
-// Accounts(float balance, String accountNumber, String accountHolderName,
-// String address) {
-// this.balance = balance;
-// this.accountNumber = accountNumber;
-// this.accountHolderName = accountHolderName;
-// this.address = address;
-// }
+//     Accounts(float balance, String accountNumber, String accountHolderName,
+//             String address) {
+//         this.balance = balance;
+//         this.accountNumber = accountNumber;
+//         this.accountHolderName = accountHolderName;
+//         this.address = address;
+//     }
 
-// abstract void deposit(float amount);
+//     abstract void deposit(float amount);
 
-// abstract void withdraw(float amount);
+//     abstract void withdraw(float amount);
 
-// abstract void display();
+//     abstract void display();
 // }
 
 // class SavingsAccount extends Accounts {
-// float interestRate;
+//     float interestRate;
 
-// SavingsAccount(float balance, String accountNumber, String accountHolderName,
-// String address, float interestRate) {
-// super(balance, accountNumber, accountHolderName, address);
-// this.interestRate = interestRate;
-// }
+//     SavingsAccount(float balance, String accountNumber, String accountHolderName,
+//             String address, float interestRate) {
+//         super(balance, accountNumber, accountHolderName, address);
+//         this.interestRate = interestRate;
+//     }
 
-// void deposit(float amount) {
-// balance += amount;
-// }
+//     void deposit(float amount) {
+//         balance += amount;
+//     }
 
-// void withdraw(float amount) {
-// balance -= amount;
-// }
+//     void withdraw(float amount) {
+//         balance -= amount;
+//     }
 
-// void display() {
-// System.out.println("Account Number: " + accountNumber);
-// System.out.println("Account Holder Name: " + accountHolderName);
-// System.out.println("Address: " + address);
-// System.out.println("Balance: " + balance);
-// System.out.println("Interest Rate: " + interestRate);
-// }
+//     void display() {
+//         System.out.println("Account Number: " + accountNumber);
+//         System.out.println("Account Holder Name: " + accountHolderName);
+//         System.out.println("Address: " + address);
+//         System.out.println("Balance: " + balance);
+//         System.out.println("Interest Rate: " + interestRate);
+//     }
 // }
 
 // public class exp8 {
-// public static void main(String[] args) {
-// SavingsAccount s1 = new SavingsAccount(10000, "123456789", "Rahul", "Mumbai",
-// 5);
-// s1.display();
-// s1.deposit(1000);
-// s1.display();
-// s1.withdraw(500);
-// s1.display();
+//     public static void main(String[] args) {
+//         SavingsAccount s1 = new SavingsAccount(10000, "123456789", "Rahul", "Mumbai",
+//                 5);
+//         s1.display();
+//         s1.deposit(1000);
+//         s1.display();
+//         s1.withdraw(500);
+//         s1.display();
 
-// }
+//     }
 
 // }
 

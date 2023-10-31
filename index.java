@@ -234,12 +234,23 @@
 // }
 // }
 
+import java.util.*;
+
 /**
  * index
  */
 public class index {
 
     public static void main(String[] args) {
+        ArrayList<Integer> arr = new ArrayList<Integer>();
 
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        String s;
+        Scanner scanner = new Scanner(System.in);
+        s = scanner.nextLine();
+        String s1 = new StringBuilder(s).reverse().toString();
+        System.out.println(s1);
     }
 }
