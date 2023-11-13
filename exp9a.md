@@ -4,6 +4,48 @@ Name: Abinav P
 
 Rollnumber: 22z201
 
+### 1. Multpile Inheritance in Java is achieved by using interfaces. Demonstrate it.
+
+```java
+
+interface teacher {
+    public String qualification = "Msc";
+
+    public String Experience = "5 years";
+}
+
+interface Student {
+    public String course = "MCA";
+
+    public int rollno = 10;
+}
+
+class Resume implements teacher, Student {
+
+    public void display() {
+        System.out.println("the qualification is :" + qualification);
+        System.out.println("the experience is :" + Experience);
+        System.out.println("the course is :" + course);
+        System.out.println("the rollno is :" + rollno);
+    }
+}
+
+class exp9a {
+    public static void main(String[] args) {
+        Resume obj = new Resume();
+        obj.display();
+    }
+}
+```
+
+```shell
+$ javac exp9a.java
+$ java exp9a
+the qualification is :Msc
+the experience is :5 years
+the course is :MCA
+the rollno is :10
+```
 
 ###  2. Interface, in many way, similar to a class; however, no object can be instantiated from an interface. Demonstrate it.
 
@@ -201,3 +243,9 @@ class StackTest implements Stack {
 $ javac StackTest.java
 $ java StackTest
 ```
+
+
+
+### Result:
+
+Thus the above programs are executed and the output is verified

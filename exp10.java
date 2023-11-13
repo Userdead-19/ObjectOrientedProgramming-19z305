@@ -106,90 +106,127 @@
 // }
 // }
 
-/*3. Create a class Student with the data members Name, Register Number, Mark1, Mark2,
-Mark3, Total and Average. Using necessary member functions get the input, calculate
-Total and Average and display the student information’s. If the register number exceeds
-6 digits then raise one user defined exception called InvalidRegNoException. Similarly if
-marks value is greater than 100 throw an exception called MarkOutOfBoundsException */
+/*
+ * 3. Create a class Student with the data members Name, Register Number, Mark1,
+ * Mark2,
+ * Mark3, Total and Average. Using necessary member functions get the input,
+ * calculate
+ * Total and Average and display the student information’s. If the register
+ * number exceeds
+ * 6 digits then raise one user defined exception called InvalidRegNoException.
+ * Similarly if
+ * marks value is greater than 100 throw an exception called
+ * MarkOutOfBoundsException
+ */
 
-import java.util.Scanner;
-import java.lang.Exception;
+// import java.util.Scanner;
+// import java.lang.Exception;
 
-class InvalidRegNoException extends Exception {
-    InvalidRegNoException(String s) {
-        super(s);
-    }
-}
+// class InvalidRegNoException extends Exception {
+// InvalidRegNoException(String s) {
+// super(s);
+// }
+// }
 
-class MarkOutOfBoundsException extends Exception {
-    MarkOutOfBoundsException(String s) {
-        super(s);
-    }
-}
+// class MarkOutOfBoundsException extends Exception {
+// MarkOutOfBoundsException(String s) {
+// super(s);
+// }
+// }
 
-class student {
-    String name;
-    int regno;
-    int mark1;
-    int mark2;
-    int mark3;
-    int total;
-    int average;
+// class student {
+// String name;
+// int regno;
+// int mark1;
+// int mark2;
+// int mark3;
+// int total;
+// int average;
 
-    public void getdata() throws InvalidRegNoException, MarkOutOfBoundsException {
-        Scanner scan = new Scanner(System.in);
-        System.out.print("enter the name :");
-        name = scan.nextLine();
-        System.out.print("enter the regno :");
-        regno = scan.nextInt();
-        if (regno > 999999) {
-            throw new InvalidRegNoException("the regno is invalid");
-        }
-        System.out.print("enter the mark1 :");
-        mark1 = scan.nextInt();
-        if (mark1 > 100) {
-            throw new MarkOutOfBoundsException("the mark1 is invalid");
-        }
-        System.out.print("enter the mark2 :");
-        mark2 = scan.nextInt();
-        if (mark2 > 100) {
-            throw new MarkOutOfBoundsException("the mark2 is invalid");
-        }
-        System.out.print("enter the mark3 :");
-        mark3 = scan.nextInt();
-        if (mark3 > 100) {
-            throw new MarkOutOfBoundsException("the mark3 is invalid");
-        }
-        scan.close();
-    }
+// public void getdata() throws InvalidRegNoException, MarkOutOfBoundsException
+// {
+// Scanner scan = new Scanner(System.in);
+// System.out.print("enter the name :");
+// name = scan.nextLine();
+// System.out.print("enter the regno :");
+// regno = scan.nextInt();
+// if (regno > 999999) {
+// throw new InvalidRegNoException("the regno is invalid");
+// }
+// System.out.print("enter the mark1 :");
+// mark1 = scan.nextInt();
+// if (mark1 > 100) {
+// throw new MarkOutOfBoundsException("the mark1 is invalid");
+// }
+// System.out.print("enter the mark2 :");
+// mark2 = scan.nextInt();
+// if (mark2 > 100) {
+// throw new MarkOutOfBoundsException("the mark2 is invalid");
+// }
+// System.out.print("enter the mark3 :");
+// mark3 = scan.nextInt();
+// if (mark3 > 100) {
+// throw new MarkOutOfBoundsException("the mark3 is invalid");
+// }
+// scan.close();
+// }
 
-    public void calculate() {
-        total = mark1 + mark2 + mark3;
-        average = total / 3;
-    }
+// public void calculate() {
+// total = mark1 + mark2 + mark3;
+// average = total / 3;
+// }
 
-    public void display() {
-        System.out.println("the name is :" + name);
-        System.out.println("the regno is :" + regno);
-        System.out.println("the mark1 is :" + mark1);
-        System.out.println("the mark2 is :" + mark2);
-        System.out.println("the mark3 is :" + mark3);
-    }
-}
+// public void display() {
+// System.out.println("the name is :" + name);
+// System.out.println("the regno is :" + regno);
+// System.out.println("the mark1 is :" + mark1);
+// System.out.println("the mark2 is :" + mark2);
+// System.out.println("the mark3 is :" + mark3);
+// }
+// }
 
-class exp10 {
-    public static void main(String[] args) {
-        student obj = new student();
-        try {
-            obj.getdata();
-            obj.calculate();
-            obj.display();
-        } catch (InvalidRegNoException e) {
-            System.out.println("the exception is :" + e);
-        } catch (MarkOutOfBoundsException e) {
-            System.out.println("the exception is :" + e);
-        } finally {
-            System.out.println("the program is executed");
-        }
-    }
-}
+// class exp10 {
+// public static void main(String[] args) {
+// student obj = new student();
+// try {
+// obj.getdata();
+// obj.calculate();
+// obj.display();
+// } catch (InvalidRegNoException e) {
+// System.out.println("the exception is :" + e);
+// } catch (MarkOutOfBoundsException e) {
+// System.out.println("the exception is :" + e);
+// } finally {
+// System.out.println("the program is executed");
+// }
+// }
+// }
+
+// interface teacher {
+// public String qualification = "Msc";
+
+// public String Experience = "5 years";
+// }
+
+// interface Student {
+// public String course = "MCA";
+
+// public int rollno = 10;
+// }
+
+// class Resume implements teacher, Student {
+
+// public void display() {
+// System.out.println("the qualification is :" + qualification);
+// System.out.println("the experience is :" + Experience);
+// System.out.println("the course is :" + course);
+// System.out.println("the rollno is :" + rollno);
+// }
+// }
+
+// class exp9a {
+// public static void main(String[] args) {
+// Resume obj = new Resume();
+// obj.display();
+// }
+// }
