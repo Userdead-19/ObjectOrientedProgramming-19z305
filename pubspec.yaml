@@ -1,0 +1,18 @@
+name: your_project_name
+description: A short description of your project
+version: 1.0.0
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'  # Specify the Dart SDK version your project is compatible with
+
+dependencies:
+  flutter: 
+    sdk: flutter  # This line is specific for Flutter projects
+
+  # Add your other dependencies here
+  http: ^0.13.3  # Example dependency
+
+dev_dependencies:
+  # Add your development dependencies here
+
+# Additional configuration options can be added as needed

@@ -1,16 +1,11 @@
-import 'dart:convert';
+import 'package:http/http.dart' as http;
 
 void main(List<String> args) {
-  Hello h1 = new Hello("Abinav", 19);
-  print(h1.name);
-  print(h1.age);
-  String s = "Hello";
-  String encode = Base64Encoder().convert(s.codeUnits);
-  print(encode);
+  fetch();
 }
 
-class Hello {
-  String name;
-  int age;
-  Hello(this.name, this.age);
+void fetch() async {
+  var uri = "http://abinav19.pythonanywhere.com/";
+  var response = await http.get(Uri.parse(uri));
+  print(response.body);
 }

@@ -234,23 +234,58 @@
 // }
 // }
 
-import java.util.*;
+// example try catch
 
-/**
- * index
- */
-public class index {
+import java.util.Scanner;
 
-    public static void main(String[] args) {
-        ArrayList<Integer> arr = new ArrayList<Integer>();
+// class index {
 
-        arr.add(1);
-        arr.add(2);
-        arr.add(3);
-        String s;
-        Scanner scanner = new Scanner(System.in);
-        s = scanner.nextLine();
-        String s1 = new StringBuilder(s).reverse().toString();
-        System.out.println(s1);
-    }
-}
+// public static void main(String[] args) {
+// Scanner scan = new Scanner(System.in);
+// System.out.print("enter the number :");
+// int a = scan.nextInt();
+// System.out.print("enter the number :");
+// int b = scan.nextInt();
+// try {
+// throw new Exception("the exception is thrown");
+// scan.close();
+// } catch (Exception e) {
+// System.out.println("the exception is :" + e);
+// }
+// finally{
+// scan.close();
+// }
+
+// }
+// }
+
+// throws keyword
+
+// import java.lang.Exception;
+
+// /**
+// * index
+// */
+// public class index {
+// public void error(int n) throws Exception {
+// if (n < 0) {
+// throw new Exception("the number is negative");
+// }
+// }
+
+// public static void main(String[] args) {
+
+// Scanner scan = new Scanner(System.in);
+// System.out.print("enter the number :");
+// int n = scan.nextInt();
+// index obj = new index();
+// try {
+// obj.error(n);
+// } catch (Exception e) {
+// System.out.println("the exception is :" + e);
+// } finally {
+// System.err.println("the number is :" + n);
+// scan.close();
+// }
+// }
+// }
