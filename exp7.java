@@ -77,32 +77,34 @@
 // numbers based on the sequence of argument types while calling methods at
 // runtime
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class customfunctions {
-    int multiply(int a, int b) {
-        return a * b;
-    }
+// class customfunctions {
+// int multiply(int a, int b) {
+// return a * b;
+// }
 
-    int multiply(int a, int b, int c) {
-        return a * b * c;
-    }
-}
+// int multiply(int a, int b, int c) {
+// return a * b * c;
+// }
+// }
 
-public class exp7 {
+// public class exp7 {
 
-    public static void main(String[] args) {
-        customfunctions cf = new customfunctions();
-        Scanner scan = new Scanner(System.in);
-        System.out.print("enter the first number :");
-        int a = scan.nextInt();
-        System.out.print("enter the second number :");
-        int b = scan.nextInt();
-        System.out.print("enter the third number :");
-        int c = scan.nextInt();
-        System.out.println("the product of two numbers is :" + cf.multiply(a, b));
-        System.out.println("the product of three numbers is :" + cf.multiply(a, b,
-                c));
-        scan.close();
-    }
-}
+// public static void main(String[] args) {
+// customfunctions cf = new customfunctions();
+// Scanner scan = new Scanner(System.in);
+// System.out.print("enter the first number :");
+// int a = scan.nextInt();
+// System.out.print("enter the second number :");
+// int b = scan.nextInt();
+// System.out.print("enter the third number :");
+// int c = scan.nextInt();
+// System.out.println("the product of two numbers is :" + cf.multiply(a, b));
+// System.out.println("the product of three numbers is :" + cf.multiply(a, b,
+// c));
+// scan.close();
+// }
+// }
+
+// Give me a question on single inheritance
